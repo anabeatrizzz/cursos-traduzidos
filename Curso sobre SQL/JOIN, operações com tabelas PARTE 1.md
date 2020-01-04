@@ -1,6 +1,16 @@
 Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.sololearn&sa=D&ust=1576783845736000&usg=AFQjCNGtodbaSu06Z4kEDTksKn0tg7eK-w) e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Juntando tabelas
+# Indice
+- [Juntando tabelas](#juntando-tabelas)
+- [Tipos de junção](#tipos-de-junção)
+	- [Nomes customizados](#nomes-customizados)
+	- [LEFT JOIN](#left-join)
+	- [RIGHT JOIN](#right-join)
+- [UNION](#union)
+	- [Conjunto de operações](#conjunto-de-operações)
+	- [UNION ALL](#union-all)
+
+# [Juntando tabelas](#indice)
 Todas as consultas mostradas até agora foram selecionadas de apenas uma tabela por vez. 
 
 Uma das ferramentas mais benéficas do SQL é a habilidade de combinar dados de duas ou mais tabelas. 
@@ -54,8 +64,8 @@ Os dados retornados mostram os pedidos dos clientes e sua quantidade.
 
 Indique múltiplas tabelas no `FROM` as separando com vírgulas.
 
-# Tipos de junção
-### Nomes customizados
+# [Tipos de junção](#indice)
+### [Nomes customizados](#indice)
 Diferentes nomes podem ser usados para as tabelas também. Você pode encurtar a consulta usando "apelidos" para as tabelas:
 ```sql
 SELECT clie.ID, clie.Nome, pedi.Nome, pedi.Quantidade
@@ -82,7 +92,7 @@ A imagem abaixo demostra como o `INNER JOIN` funciona:
 ![INNERJOIN](https://i.imgur.com/nlCTPRm.png)
 
 Apenas os registros que combinam com a condição `JOIN` são mostrados.
-### LEFT JOIN
+### [LEFT JOIN](#indice)
 Retorna todas as linhas da tabela da esquerda, até mesmo se não há combinação na tabela da direita. 
 
 Isso significa que se não há combinações usando o `ON` na tabela da direita, a junção ainda retornará as linhas da primeira tabela no resultado.
@@ -147,7 +157,7 @@ A tabela-resultado contem todas as linhas da tabela da esquerda e os dados que c
 
 Se nenhuma combinação é encontrada para uma linha, `NULL` é mostrado.
 
-### RIGHT JOIN
+### [RIGHT JOIN](#indice)
 Retorna todas as linhas da tabela da direita até mesmo se não há combinações com a tabela da esquerda.
 
 ![RIGHTJOIN](https://i.imgur.com/4PJoGJy.png)
@@ -181,8 +191,8 @@ O `RIGHT JOIN` retorna todas as linhas da tabela da direita (itens), mesmo se n�
 
 Há outros tipos de junção em SQL mas não são suportados pelo MySQL.
 
-# UNION
-### Conjunto de operações
+# [UNION](#indice)
+### [Conjunto de operações](#indice)
 Você talvez precise combinar dados de múltiplas tabelas formando um conjunto de dados. Podendo ser para tabelas com dados similares dentro do mesmo banco de dados ou talvez há a necessidade de combinar dados similares com outros bancos de dados ou até mesmo com outros servidores. 
 
 Para isso, use os operadores `UNION` e `UNION ALL`.
@@ -234,7 +244,7 @@ SELECT Nome, Sobrenome, Empresa FROM contatosDeNegocio
 UNION
 SELECT Nome, Sobrenome, NULL FROM outrosContatos;
 ```
-### UNION ALL
+### [UNION ALL](#indice)
 Seleciona todas as linhas de cada tabela e as combina numa única tabela. 
 
 A seguinte afirmação SQL usa o `UNION ALL` para selecionar dados das tabelas primeira e segunda:
