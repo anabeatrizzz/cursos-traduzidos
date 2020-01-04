@@ -187,11 +187,11 @@ Para criar uma tabela, você precisa nomeá-la, definir suas colunas e definir c
 A sintaxe básica da afirmação `CREATE TABLE` é a seguinte:
 ```sql
 CREATE TABLE table_name (  
-	nome_da_coluna1 tipo_de_dado(tamanho),  
-	nome_da_coluna2 tipo_de_dado(tamanho),  
-	nome_da_coluna3 tipo_de_dado(tamanho),  
-	....  
-	nome_da_colunaN tipo_de_dado(tamanho)  
+   nome_da_coluna1 tipo_de_dado(tamanho),  
+   nome_da_coluna2 tipo_de_dado(tamanho),  
+   nome_da_coluna3 tipo_de_dado(tamanho),  
+   ....  
+   nome_da_colunaN tipo_de_dado(tamanho)  
 );
 ```
 \- Os __nome_da_coluna__ indicam os nomes das colunas que queremos criar.<br>- O parâmetro __tipo_de_dado__ indica qual é o tipo de dado das tabelas. Por exemplo, use `int` se uma coluna apenas pode receber números inteiros.<br>- O parâmetro __tamanho__ indica o comprimento máximo da coluna da tabela. 
@@ -203,10 +203,10 @@ Suponhamos que você queira criar uma tabela chamada "usuarios" que consiste em 
 Use a seguinte afirmação `CREATE TABLE`:
 ```sql
 CREATE TABLE usuarios(  
-	UsuarioID INT,  
-	Nome VARCHAR(100),
-	Sobrenome VARCHAR(100),
-	Cidade VARCHAR(100)
+   UsuarioID INT,  
+   Nome VARCHAR(100),
+   Sobrenome VARCHAR(100),
+   Cidade VARCHAR(100)
 );
 ```
 `varchar` é o tipo de dado que armazena caracteres. Você indica o número de caracteres dentro de parênteses depois do tipo. No exemplo acima, as colunas podem conter um texto que tenha no máximo __100__ caracteres. 
@@ -226,11 +226,11 @@ Escolher o tipo de dado correto para as colunas é a chave para o bom design do 
 O UsuariolD é a melhor opção de chave primária para nossa tabela usuarios.<br>Defina a chave primária durante a criação da tabela usando `PRIMARY KEY`.
 ```sql
 CREATE TABLE Users(
-	UsuarioID INT,
-	Nome VARCHAR(100),
-	Sobrenome VARCHAR(100),
-	Cidade VARCHAR(100),
-	PRIMARY KEY(UsuarioID)
+   UsuarioID INT,
+   Nome VARCHAR(100),
+   Sobrenome VARCHAR(100),
+   Cidade VARCHAR(100),
+   PRIMARY KEY(UsuarioID)
 );
 ```
 Especifique o nome da coluna nos parênteses do `PRIMARY KEY`.
