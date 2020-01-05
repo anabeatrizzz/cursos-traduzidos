@@ -1,13 +1,12 @@
 Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.sololearn&sa=D&ust=1576783845736000&usg=AFQjCNGtodbaSu06Z4kEDTksKn0tg7eK-w) e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
+# Indice
 - [LIKE e MIN](#like-e-min)
   - [LIKE](#like)
   - [A função MIN](#a-função-min)
 
-# LIKE e MIN
-#### [Voltar ao indice](#indice)
-### LIKE
-#### [Voltar ao indice](#indice)
+# [LIKE e MIN](#indice)
+### [LIKE](#indice)
 É útil quando estamos especificando uma __condição de pesquisa__ dentro de uma afirmação `WHERE`.
 ```sql
 SELECT nome(s)_da(s)_coluna(s)
@@ -44,8 +43,7 @@ ID|Nome|Sobrenome|Salario
 7|Daniel|Harris|3000
 
 O `%` pode ser usado __múltiplas__ vezes dentro do mesmo padrão.
-### A função MIN
-#### [Voltar ao indice](#indice)
+### [A função MIN](#indice)
 É usada para retornar o valor mínimo de uma expressão numa afirmação `SELECT`. 
 
 Por exemplo, você talvez queira saber o salário mínimo dos trabalhadores.
