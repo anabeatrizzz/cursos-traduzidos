@@ -1,6 +1,6 @@
 Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Indice
+# Índice
 - [Introdução ao banco de dados](#introdução-ao-banco-de-dados)
   - [Um banco de dados](#um-banco-de-dados)
   - [As tabelas do banco de dados](#as-tabelas-do-banco-de-dados)
@@ -14,8 +14,8 @@ Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Be
   - [Sensibilidade](#sensibilidade)
   - [Regras de sintaxe](#regras-de-sintaxe)
 
-# [Introdução ao banco de dados](#indice)
-### [Um banco de dados](#indice)
+# [Introdução ao banco de dados](#índice)
+### [Um banco de dados](#índice)
 Um banco de dados é uma coleção de dados que é organizada de uma maneira que facilita o acesso, o gerenciamento e a atualização.
 
 Um banco de dados é feito de tabelas que armazenam informações relevantes.
@@ -24,7 +24,7 @@ Por exemplo, você usaria um banco de dados se você fosse criar um site como o 
 
 ![Imagem da tabela](http://i.imgur.com/88mRdYa.png)
 
-### [As tabelas do banco de dados](#indice)
+### [As tabelas do banco de dados](#índice)
 Uma tabela armazena e mostra dados de forma estruturada por colunas e linhas, semelhante às planilhas do Excel.
 
 Bancos de dados frequentemente contêm múltiplas tabelas, cada uma designada para um propósito. Por exemplo, imagine criar uma tabela que contenha nomes e números de telefone. 
@@ -42,7 +42,7 @@ Emily | Adams | 14 9 5663-3312
 James | Roberts | 15 9 7637-7729
 
 Uma tabela tem um número específico de colunas mas pode conter quantas linhas quiser.
-### [Chaves primárias](#indice)
+### [Chaves primárias](#índice)
 Uma chave primária é um campo na tabela que, unicamente, identifica os registros da tabela.
 
 As principais características das chaves primárias são:
@@ -61,7 +61,7 @@ ID | Nome | Sobrenome | Telefone
 
 * Cada tabela apenas pode ter UMA chave primária.
 * O valor da chave primária deve ser diferente para cada linha.
-### [O que é SQL?](#indice)
+### [O que é SQL?](#índice)
 Quando você entende o que é um banco de dados, saber o que é SQL fica fácil. SQL significa Structured Query Language (Linguagem Estruturada para Consultas)
 
 SQL é usado para acessar e manipular um banco de dados. MySQL é um programa que entende SQL.
@@ -73,8 +73,8 @@ O SQL pode:
 
 SQL é de padrão ANSI, mas há diferentes versões da linguagem SQL. A maioria dos programas de bancos de dados SQL tem suas próprias propriedades adicionadas, mas todas elas suportam os comandos principais.
 
-# [Comandos SQL: SELECT](#indice)
-### [Comandos básicos SQL](#indice)
+# [Comandos SQL: SELECT](#índice)
+### [Comandos básicos SQL](#índice)
 A afirmação `SHOW` mostra informação que está no banco de dados e em suas tabelas. Essa ferramenta útil te deixa observar o conteúdo do seu banco de dados e te lembrar da estrutura de suas tabelas.
 Por exemplo, o comando `SHOW DATABASES` lista os bancos de dados gerenciados pelo servidor.
 
@@ -102,7 +102,7 @@ __Key__: indica se a coluna é indexada.
 __Default__: valor padrão referido a coluna.
 
 __Extra__: pode conter qualquer informação adicional disponível sobre uma coluna específica.
-### [O comando SELECT](#indice)
+### [O comando SELECT](#índice)
 É usado para selecionar dados de um banco de dados. O resultado é armazenado em uma tabela de resultados, que é chamada de result-set. 
 
 Uma consulta pode recuperar informação de colunas selecionadas ou de todas as colunas da tabela. Para criar uma afirmação `SELECT` simples, especifique o(s) nome(s) da(s) coluna(s) que você precisa.
@@ -142,8 +142,8 @@ Emily|
 James|
 
 Uma afirmação `SELECT` retorna zero ou mais linhas de uma ou mais tabelas do banco de dados.
-# [Regras de sintaxe SQL](#indice)
-### [Multiplas consultas](#indice)
+# [Regras de sintaxe SQL](#índice)
+### [Multiplas consultas](#índice)
 SQL permite executar múltiplas consultas ou comandos ao mesmo tempo. 
 
 A seguinte afirmação SQL seleciona as colunas Nome e Cidade da tabela clientes: 
@@ -171,7 +171,7 @@ Houston|
 Filadelfia|
 
 Lembre-se de terminar cada afirmação SQL com ponto e vírgula para indicar que a afirmação está completa e pronta para ser interpretada. Nesse tutorial, usaremos ponto e vírgula no fim de cada afirmação SQL.
-### [Sensibilidade](#indice)
+### [Sensibilidade](#índice)
 SQL não diferencia entre letras maiúsculas e minúsculas.
 As seguintes afirmações são equivalentes e irão mostrar o mesmo resultado:
 
@@ -181,7 +181,7 @@ SELECT Cidade FROM cleintes;
 sElEct Cidade From clientes; 
 ```
 É comum praticar a escrita de todos os comandos SQL em letras maiúsculas.
-### [Regras de sintaxe](#indice)
+### [Regras de sintaxe](#índice)
 Uma única afirmação SQL pode ser colocada em uma ou mais linhas. Além disso, múltiplas afirmações SQL podem ser combinadas em uma única linha. 
 
 Espaços em branco e múltiplas linhas são ignoradas no SQL. Por exemplo, a consulta a seguir está absolutamente correta.
