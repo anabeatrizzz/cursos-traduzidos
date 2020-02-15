@@ -1,6 +1,6 @@
 Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Indice
+# Índice
 - [Selecionando múltiplas colunas](#selecionando-múltiplas-colunas)
   - [Selecionando todas as colunas](#selecionando-todas-as-colunas)
 - [DISTINCT e LIMIT](#distinct-e-limit)
@@ -11,7 +11,7 @@ Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Be
   - [ORDER BY](#order-by)
   - [Classificando múltiplas colunas](#classificando-múltiplas-colunas)
 
-# [Selecionando múltiplas colunas](#indice)
+# [Selecionando múltiplas colunas](#índice)
 Como citado anteriormente, a afirmação SELECT do SQL retorna registros de tabelas no seu banco de dados SQL. 
 
 Você pode selecionar múltiplas colunas de uma vez. Apenas liste os nomes das colunas separadas por vírgulas:
@@ -31,7 +31,7 @@ Emily | Adams | Houston
 James | Roberts | Filadelfia
 
 Não coloque uma vírgula depois do último nome da coluna. 
-### [Selecionando todas as colunas](#indice)
+### [Selecionando todas as colunas](#índice)
 Para retornar toda a informação contida em sua tabela, coloque um asterisco depois do comando SELECT, invés de escrever cada nome das colunas separadamente.
 
 A seguinte afirmação SQL seleciona todas as colunas da tabela clientes:
@@ -50,8 +50,8 @@ ID | Nome | Sobrenome | Cidade | CodigoPostal
 5 | James | Roberts | Filadelfia | 19104
 
 Em SQL, o asterisco significa "todos".
-# [DISTINCT e LIMIT](#indice)
-### [O comando DISTINCT](#indice)
+# [DISTINCT e LIMIT](#índice)
+### [O comando DISTINCT](#índice)
 Quando você tem registros duplicados em uma tabela, faz sentido mostrar apenas registros únicos, invés de mostrar os duplicados. 
 
 O comando `DISTINCT` do SQL é usado em conjunto com o `SELECT` para eliminar todos os registros duplicados e mostrar apenas os registros únicos. 
@@ -94,7 +94,7 @@ Filadelfia|
 San Diego|
 
 O comando `DISTINCT` apenas busca por valores únicos.
-### [O comando LIMIT](#indice)
+### [O comando LIMIT](#índice)
 Por padrão, todos os resultados que satisfazem as condições especificadas na afirmação SQL são retornados. Entretanto, às vezes precisamos retornar apenas alguns registros. No MySQL, isso é feito usando o comando `LIMIT`. 
 
 A sintaxe do `LIMIT` é a seguinte:
@@ -137,8 +137,8 @@ ID|Nome|Sobrenome|Cidade
 7|Daniel|Harris|Nova York
 
 O motivo pelo qual é mostrado resultados a partir do ID número 4 (e não 3) é que o MySQL começa contando do zero, significando que a primeira Iinha começa do número 0 (e não 1).
-# [Classificando resultados](#indice)
-### [Nome totalmente qualificado](#indice)
+# [Classificando resultados](#índice)
+### [Nome totalmente qualificado](#índice)
 Em SQL, você pode colocar o nome da tabela antes do nome da coluna fazendo a separação com um ponto final.
 As seguintes afirmações são equivalentes:
 
@@ -152,7 +152,7 @@ O termo para a sintaxe mencionada acima é chamado de “nome totalmente qualifi
 
 Essa forma de escrita é útil especialmente quando estamos trabalhando com múltiplas tabelas que podem ter mesmos nomes de colunas.
 
-### [ORDER BY](#indice)
+### [ORDER BY](#índice)
 É usado com o `SELECT` para classificar os dados retornados. 
 O exemplo a seguir classifica nossa tabela clientes pela coluna Nome.
 
@@ -178,7 +178,7 @@ ID | Nome | Sobrenome | Cidade
 Como pode ver, as linhas estão ordenadas de maneira alfabética pela coluna Nome.
 
 Por padrão, o comando `ORDER BY` classifica os resultados em ordem crescente.
-### [Classificando múltiplas colunas](#indice)
+### [Classificando múltiplas colunas](#índice)
 Quando estiver usando `ORDER BY` com mais de uma coluna, separe a lista de colunas com vírgulas. Aqui está a tabela clientes mostrando os seguintes registros:
 
 ID | Nome | Sobrenome | Idade
