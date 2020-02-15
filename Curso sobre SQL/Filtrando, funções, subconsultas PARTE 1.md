@@ -1,6 +1,6 @@
 Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.sololearn&sa=D&ust=1576783845736000&usg=AFQjCNGtodbaSu06Z4kEDTksKn0tg7eK-w) e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Indice
+# Índice
 - [WHERE](#where)
   - [Operadores do SQL](#operadores-do-sql)
   - [BETWEEN](#between)
@@ -13,7 +13,7 @@ Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/ur
   - [IN](#in)
   - [NOT IN](#not-in)
 
-# [WHERE](#indice)
+# [WHERE](#índice)
 O `WHERE` é usado para mostrar apenas registros que preenchem um critério específico. 
 
 A sintaxe do `WHERE`: 
@@ -47,7 +47,7 @@ ID|Nome|Sobrenome|Cidade
 ---|---|---|---
 7|Daniel|Harris|Nova York
 
-### [Operadores do SQL](#indice)
+### [Operadores do SQL](#índice)
 Operadores de comparação e operadores lógicos são usados na afirmação `WHERE` para filtrar os dados a serem selecionados. 
 
 Os seguintes operadores de comparação podem ser usados com a afirmação `WHERE`:
@@ -83,7 +83,7 @@ ID|Nome|Sobrenome|Cidade
 
 Como pode ver, o registro com o ID de número 5 está excluído da lista.
 
-### [BETWEEN](#indice)
+### [BETWEEN](#índice)
 O operador `BETWEEN` seleciona valores dentro de um intervalo. O primeiro valor deve ser o limite mínimo e o segundo valor, o limite máximo. 
 
 A sintaxe do operador `BETWEEN` é a seguinte: 
@@ -109,7 +109,7 @@ ID|Nome|Sobrenome|Cidade
 7|Daniel|Harris|Nova York
 
 Como pode ver, os valores mínimo e máximo são incluídos.
-### [Valores textuais](#indice)
+### [Valores textuais](#índice)
 Quando trabalhamos com colunas que contem textos, devemos colocar qualquer texto que apareça na afirmação entre __aspas simples (')__. 
 
 A seguinte afirmação SQL seleciona todos os registros onde a coluna Cidade tem o valor 'Nova York'.
@@ -127,8 +127,8 @@ ID|Nome|Sobrenome|Cidade
 
 Se seu texto contem um apóstrofo, você deve usar duas aspas simples para que o apóstrofo apareça. Por exemplo: 'Can"t'
 
-# [Filtrando com AND e OR](#indice)
-### [Operadores lógicos](#indice)
+# [Filtrando com AND e OR](#índice)
+### [Operadores lógicos](#índice)
 Podem ser usados para combinar dois valores Boolean e retornar um resultado verdadeiro, falso ou nulo.<br>Os seguintes operadores podem ser usados:
 
 Operador|Descrição
@@ -167,7 +167,7 @@ ID|Nome|Sobrenome|Idade
 7|Daniel|Harris|30
 
 Você pode combinar quantas condições quiser para que os resultados desejados sejam mostrados.
-### [OR](#indice)
+### [OR](#índice)
 Se você quer selecionar linhas que satisfaçam pelo menos uma das condições dadas, você pode usar o operador lógico `OR`. 
 
 A seguinte tabela descreve como o operador lógico `OR` funciona:
@@ -196,7 +196,7 @@ ID|Nome|Sobrenome|Cidade
 
 Você pode usar `OR` com duas ou mais condições.
 
-### [Combinando AND e OR](#indice)
+### [Combinando AND e OR](#índice)
 As condições `AND` e `OR` do SQL podem ser combinadas para testar múltiplas condições em uma consulta. Esses dois operadores são chamados de operadores conjuntivos.
 
 Quando combinamos essas condições, é importante usar parênteses para ordenar, assim, se sabe a ordem para avaliar a condição.
@@ -230,8 +230,8 @@ ID|Nome|Sobrenome|Cidade|Idade
 
 Você pode aninhar quantas condições quiser. 
 
-# [IN e NOT IN](#indice)
-### [IN](#indice)
+# [IN e NOT IN](#índice)
+### [IN](#índice)
 O operador `IN` é usado quando queremos comparar uma coluna com mais de um valor. 
 
 Por exemplo, você talvez precise selecionar todos os clientes de Nova York, Los Angeles e Chicago.<br>Com a condição `OR`, nosso SQL iria ficar assim:
@@ -272,7 +272,7 @@ ID|Nome|Sobrenome|Cidade
 
 Note o uso dos parênteses na sintaxe.
 
-### [NOT IN](#indice)
+### [NOT IN](#índice)
 O operador `NOT IN` nos permite excluir uma lista de valores específicos de uma tabela-resultado.
 
 Se adicionarmos `NOT` antes de `IN` na nossa consulta anterior, os clientes que vivem nessas cidades iriam ser excluídos:
