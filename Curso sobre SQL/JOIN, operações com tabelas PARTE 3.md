@@ -1,6 +1,6 @@
 Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.sololearn&sa=D&ust=1576783845736000&usg=AFQjCNGtodbaSu06Z4kEDTksKn0tg7eK-w) e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Indice
+# Índice
 - [NOT NULL e AUTO_INCREMENT](#not-null-e-auto_increment)
 	- [Restrições do SQL](#restrições-do-sql)
 	- [AUTO INCREMENT](#auto-increment)
@@ -13,8 +13,8 @@ Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/ur
 	- [Criando views](#criando-views)
 	- [Atualizando uma view](#atualizando-uma-view)
 
-# [NOT NULL e AUTO_INCREMENT](#indice)
-### [Restrições do SQL](#indice)
+# [NOT NULL e AUTO_INCREMENT](#índice)
+### [Restrições do SQL](#índice)
 As __restrições__ do SQL são usadas para especificar regras para os dados da tabela. 
 
 As restrições mais comuns do SQL são as seguintes:<br>`NOT NULL` - Indica que uma coluna não pode conter qualquer valor nulo.<br>`UNIQUE` - Não permite inserir um valor duplicado em uma coluna. A limitação `UNIQUE` mantém a singularidade de uma coluna em uma tabela. Mais de uma coluna pode ter a limitação `UNIQUE` em uma tabela.<br>`PRIMARY KEY` - Força a tabela a aceitar dados únicos para uma coluna específica e essa limitação cria um índice único para acessar a tabela rapidamente.<br>`CHECK` - Determina se o valor de uma expressão lógica é válido ou não.<br>`DEFAULT` - Quando colocamos dados na tabela, se nenhum valor é fornecido para uma coluna, então a coluna tem o valor estabelecido como `DEFAULT`.
@@ -24,7 +24,7 @@ Por exemplo, o seguinte código diz que a coluna __nome__ não permite valores n
 nome VARCHAR(100) NOT NULL
 ```
 Durante a criação da tabela, especifique as restrições das colunas depois do tipo de dado da coluna.
-### [AUTO INCREMENT](#indice)
+### [AUTO INCREMENT](#índice)
 O incremento automático permite que um número único seja gerado quando um novo registro é inserido na tabela. 
 
 Frequentemente, queremos que o valor da chave primária seja criado automaticamente cada vez que inserimos um novo registro. 
@@ -34,7 +34,7 @@ Por padrão, o valor de início do `AUTO_INCREMENT` é 1 e irá incrementar de u
 UsuarioID INT NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (UsuarioID)
 ```
-### [Usando restrições](#indice)
+### [Usando restrições](#índice)
 O exemplo abaixo demonstra como criar uma tabela usando limitações.
 ```sql
 CREATE TABLE Usuarios (
@@ -53,8 +53,8 @@ O seguinte SQL afirma que as colunas "id", "nome_de_usuario" e "senha" não acei
 3|senha|VARCHAR(10)|Não|Nenhum|
 
 Quando inserimos um novo registro na tabela usuarios, não é necessário especificar um valor para a coluna id; um valor único será adicionado automaticamente.
-# [Alternando, eliminando e renomeando uma tabela](#indice)
-### [ALTER TABLE](#indice)
+# [Alternando, eliminando e renomeando uma tabela](#índice)
+### [ALTER TABLE](#índice)
 O comando `ALTER TABLE` é usado para adicionar, deletar ou modificar colunas em uma tabela existente. Você também usaria o `ALTER TABLE` para adicionar várias limitações em uma tabela existente. 
 
 Considere a seguinte tabela chamada __pessoas__:
@@ -77,7 +77,7 @@ ID|Nome|Sobrenome|Cidade|AnoDeNascimento
 3|Chloe|Anderson|Chicago|_NULL_
 
 Todas as linhas tem o valor padrão na coluna nova adicionada, que, neste caso, é `NULL`.
-### [Eliminando](#indice)
+### [Eliminando](#índice)
 O código SQL a seguir demonstra como apagar a coluna chamada AnoDeNascimento da tabela pessoas.
 ```sql
 ALTER TABLE pessoas
@@ -99,7 +99,7 @@ DROP TABLE pessoas;
 ```
 Tenha cuidado ao apagar uma tabela. Apagar uma tabela resultará na perda total da informação armazenada na tabela!
 
-### [Renomeando](#indice)
+### [Renomeando](#índice)
 O comando `ALTER TABLE` também é usado para renomear colunas:
 ```sql
 ALTER TABLE pessoas
@@ -118,7 +118,7 @@ Você pode renomear a tabela inteira usando o comando `RENAME`:
 RENAME TABLE pessoas TO usuarios;
 ```
 Isso renomeará a tabela pessoas para usuarios.
-# [Views](#indice)
+# [Views](#índice)
 Em SQL, uma view é uma __tabela virtual__ que é baseada na tabela-resultado da afirmação SQL.
 
 Uma view contem linhas e colunas, como uma tabela real. Os campos em uma view são campos de uma ou mais tabelas reais em um banco de dados.
@@ -133,7 +133,7 @@ FROM nome_da_tabela
 WHERE condição;
 ```
 A consulta `SELECT` pode ser tão complexa quanto você quiser. Pode conter múltiplos JOINS e outros comandos.
-### [Criando views](#indice)
+### [Criando views](#índice)
 Veja a tabela __trabalhadores__, que contém os seguintes registros:
 
 ID|Nome|Sobrenome|Idade|Salario
@@ -169,7 +169,7 @@ Andrew|6000
 David|3000
 
 Uma view sempre mostra dados atualizados! O mecanismo do banco de dados usa a afirmação SQL da view para recriar os dados cada vez que um usuário consulta uma view.
-### [Atualizando uma view](#indice)
+### [Atualizando uma view](#índice)
 Você pode atualizar uma view usando a seguinte sintaxe:
 ```sql
 CREATE OR REPLACE VIEW view nome_da_view AS
