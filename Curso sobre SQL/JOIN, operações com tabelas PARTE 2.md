@@ -1,6 +1,6 @@
 Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.sololearn&sa=D&ust=1576783845736000&usg=AFQjCNGtodbaSu06Z4kEDTksKn0tg7eK-w) e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).
 
-# Indice
+# Índice
 - [INSERT](#insert)
 	- [Inserindo dados](#inserindo-dados)
 - [UPDATE e DELETE](#update-e-delete)
@@ -12,8 +12,8 @@ Este curso é de propriedade do aplicativo [SoloLearn](https://www.google.com/ur
 	- [Tipos de dados](#tipos-de-dados)
 	- [Chave primaria](#chave-primaria)
 
-# [INSERT](#indice)
-### [Inserindo dados](#indice)
+# [INSERT](#índice)
+### [Inserindo dados](#índice)
 As tabelas do SQL armazenam dados em linhas, uma embaixo da outra. A afirmação `INSERT INTO` é usada para adicionar novas linhas de dados a uma tabela do banco de dados.<br>A sintaxe do `INSERT INTO` é a seguinte:
 ```sql
 INSERT INTO nome_da_tabela
@@ -99,8 +99,8 @@ ID|Nome|Sobrenome|Idade
 
 Na coluna Idade há o valor 0 pois, esse é o valor padrão. 
 
-# [UPDATE e DELETE](#indice)
-### [Atualizando dados](#indice)
+# [UPDATE e DELETE](#índice)
+### [Atualizando dados](#índice)
 A afirmação `UPDATE` nos permite alterar os dados em uma tabela. 
 
 A sintaxe básica de um `UPDATE` com um `WHERE` é a seguinte:
@@ -137,7 +137,7 @@ ID|Nome|Sobrenome|Salario
 3|Chloe|Anderson|3000
 4|Emily|Adams|4500
 
-### [Atualizando múltiplas colunas](#indice)
+### [Atualizando múltiplas colunas](#índice)
 Também é possível atualizar múltiplas colunas ao mesmo tempo as separando com vírgulas:
 ```sql
 UPDATE trabalhadores
@@ -154,7 +154,7 @@ ID|Nome|Sobrenome|Salario
 
 Você pode colocar a ordem que quiser no `SET`.
 
-### [Deletando dados](#indice)
+### [Deletando dados](#índice)
 A afirmação `DELETE` é usada para remover dados de uma tabela. As consultas `DELETE` funciona do mesmo jeito que as consultas `UPDATE`.
 ```sql
 DELETE FROM nome_da_tabela
@@ -174,8 +174,8 @@ ID|Nome|Sobrenome|Salario
 
 Se você não escrever um `WHERE`, __todos__ os registros da tabela irão ser apagados!<br>A afirmação `DELETE` remove os dados da tabela permanentemente.
 
-# [Criando uma tabela](#indice)
-### [Tabelas do SQL](#indice)
+# [Criando uma tabela](#índice)
+### [Tabelas do SQL](#índice)
 Um único banco de dados pode armazenar várias tabelas, cada uma tendo seu papel no esquema do banco de dados. 
 
 As tabelas do SQL são compostas de linhas e colunas. As colunas das tabelas são responsáveis por armazenar muitos tipos de dados, incluindo números, textos, datas e até mesmo arquivos. 
@@ -210,7 +210,7 @@ CREATE TABLE usuarios(
 );
 ```
 `varchar` é o tipo de dado que armazena caracteres. Você indica o número de caracteres dentro de parênteses depois do tipo. No exemplo acima, as colunas podem conter um texto que tenha no máximo __100__ caracteres. 
-### [Tipos de dados](#indice)
+### [Tipos de dados](#índice)
 Especificam o tipo de dado de uma coluna. 
 
 Se uma coluna chamada "Sobrenome" irá armazenar nomes, então o tipo de dado dessa coluna deve ser "varchar" (caractere de comprimento variável).
@@ -222,7 +222,7 @@ __**Data e hora**__<br>`DATE` - Uma data no formato AAAA-MM-DD. <br>`DATETIME` -
 __**Texto**__<br>`CHAR`(M) - Texto de comprimento fixo. O tamanho é especificado em parênteses. Máximo de 255 bytes.<br>`VARCHAR`(M) - Texto de comprimento variável. O tamanho máximo é especificado em parênteses.<br>`BLOB` - São usados para armazenar grandes quantidades de dados binários, como imagens ou outros tipos de arquivos.<br>`TEXT` - Grandes quantidades de dados textuais. 
 
 Escolher o tipo de dado correto para as colunas é a chave para o bom design do banco de dados.
-### [Chave primaria](#indice)
+### [Chave primaria](#índice)
 O UsuariolD é a melhor opção de chave primária para nossa tabela usuarios.<br>Defina a chave primária durante a criação da tabela usando `PRIMARY KEY`.
 ```sql
 CREATE TABLE Users(
