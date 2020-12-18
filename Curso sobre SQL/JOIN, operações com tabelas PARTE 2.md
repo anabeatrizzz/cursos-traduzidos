@@ -106,8 +106,8 @@ A afirmação `UPDATE` nos permite alterar os dados em uma tabela.
 A sintaxe básica de um `UPDATE` com um `WHERE` é a seguinte:
 ```sql
 UPDATE nome_da_tabela
-SET colunal = valorl, coluna2 = valor2, ...
-WHERE condition;
+SET coluna1 = valor1, coluna2 = valor2, ...
+WHERE condição;
 ```
 Você indica a coluna e seu novo valor em uma lista separada por vírgula depois de `SET`. 
 
@@ -186,19 +186,19 @@ Para criar uma tabela, você precisa nomeá-la, definir suas colunas e definir c
 
 A sintaxe básica da afirmação `CREATE TABLE` é a seguinte:
 ```sql
-CREATE TABLE table_name (  
-   nome_da_coluna1 tipo_de_dado(tamanho),  
-   nome_da_coluna2 tipo_de_dado(tamanho),  
-   nome_da_coluna3 tipo_de_dado(tamanho),  
-   ....  
-   nome_da_colunaN tipo_de_dado(tamanho)  
+CREATE TABLE nome_tabela (
+	nome_da_coluna1 tipo_de_dado(tamanho),
+	nome_da_coluna2 tipo_de_dado(tamanho),
+	nome_da_coluna3 tipo_de_dado(tamanho),
+	...
+	nome_da_colunaN tipo_de_dado(tamanho)
 );
 ```
 \- Os __nome_da_coluna__ indicam os nomes das colunas que queremos criar.<br>- O parâmetro __tipo_de_dado__ indica qual é o tipo de dado das tabelas. Por exemplo, use `int` se uma coluna apenas pode receber números inteiros.<br>- O parâmetro __tamanho__ indica o comprimento máximo da coluna da tabela. 
 
 Note os __parênteses__ na sintaxe.
 
-Suponhamos que você queira criar uma tabela chamada "usuarios" que consiste em quatro colunas: UsuariolD, Sobrenome, Nome e Cidade. 
+Suponhamos que você queira criar uma tabela chamada "usuarios" que consiste em quatro colunas: UsuarioID, Sobrenome, Nome e Cidade. 
 
 Use a seguinte afirmação `CREATE TABLE`:
 ```sql
@@ -223,9 +223,9 @@ __**Texto**__<br>`CHAR`(M) - Texto de comprimento fixo. O tamanho é especificad
 
 Escolher o tipo de dado correto para as colunas é a chave para o bom design do banco de dados.
 ### [Chave primaria](#índice)
-O UsuariolD é a melhor opção de chave primária para nossa tabela usuarios.<br>Defina a chave primária durante a criação da tabela usando `PRIMARY KEY`.
+O UsuarioID é a melhor opção de chave primária para nossa tabela usuarios.<br>Defina a chave primária durante a criação da tabela usando `PRIMARY KEY`.
 ```sql
-CREATE TABLE Users(
+CREATE TABLE usuarios(
    UsuarioID INT,
    Nome VARCHAR(100),
    Sobrenome VARCHAR(100),

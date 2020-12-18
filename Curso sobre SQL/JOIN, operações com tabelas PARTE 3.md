@@ -29,7 +29,7 @@ O incremento automático permite que um número único seja gerado quando um nov
 
 Frequentemente, queremos que o valor da chave primária seja criado automaticamente cada vez que inserimos um novo registro. 
 
-Por padrão, o valor de início do `AUTO_INCREMENT` é 1 e irá incrementar de um em um para cada novo registro.<br>Vamos estabelecer o campo UsuariolD como a chave primária que automaticamente gera um novo valor:
+Por padrão, o valor de início do `AUTO_INCREMENT` é 1 e irá incrementar de um em um para cada novo registro.<br>Vamos estabelecer o campo UsuarioID como a chave primária que automaticamente gera um novo valor:
 ```sql
 UsuarioID INT NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (UsuarioID)
@@ -52,7 +52,7 @@ O seguinte SQL afirma que as colunas "id", "nome_de_usuario" e "senha" não acei
 2|nome_de_usuario|VARCHAR(40)|Não|Nenhum|
 3|senha|VARCHAR(10)|Não|Nenhum|
 
-Quando inserimos um novo registro na tabela usuarios, não é necessário especificar um valor para a coluna id; um valor único será adicionado automaticamente.
+Quando inserimos um novo registro na tabela usuários, não é necessário especificar um valor para a coluna id; um valor único será adicionado automaticamente.
 # [Alternando, eliminando e renomeando uma tabela](#índice)
 ### [ALTER TABLE](#índice)
 O comando `ALTER TABLE` é usado para adicionar, deletar ou modificar colunas em uma tabela existente. Você também usaria o `ALTER TABLE` para adicionar várias limitações em uma tabela existente. 
@@ -115,9 +115,9 @@ ID|name|Sobrenome|Cidade
 
 Você pode renomear a tabela inteira usando o comando `RENAME`:
 ```sql
-RENAME TABLE pessoas TO usuarios;
+RENAME TABLE pessoas TO usuários;
 ```
-Isso renomeará a tabela pessoas para usuarios.
+Isso renomeará a tabela pessoas para usuários.
 # [Views](#índice)
 Em SQL, uma view é uma __tabela virtual__ que é baseada na tabela-resultado da afirmação SQL.
 

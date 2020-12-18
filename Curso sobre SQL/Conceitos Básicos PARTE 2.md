@@ -136,7 +136,7 @@ ID|Nome|Sobrenome|Cidade
 6|Andrew|Thomas|Nova York
 7|Daniel|Harris|Nova York
 
-O motivo pelo qual é mostrado resultados a partir do ID número 4 (e não 3) é que o MySQL começa contando do zero, significando que a primeira Iinha começa do número 0 (e não 1).
+O motivo pelo qual é mostrado resultados a partir do ID número 4 (e não 3) é que o MySQL começa contando do zero, significando que a primeira linha começa do número 0 (e não 1).
 # [Classificando resultados](#índice)
 ### [Nome totalmente qualificado](#índice)
 Em SQL, você pode colocar o nome da tabela antes do nome da coluna fazendo a separação com um ponto final.

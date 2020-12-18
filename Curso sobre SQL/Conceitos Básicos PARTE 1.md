@@ -10,7 +10,7 @@ Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Be
   - [Comandos básicos SQL](#comandos-básicos-sql)
   - [O comando SELECT](#o-comando-select)
 - [Regras de sintaxe SQL](#regras-de-sintaxe-sql)
-  - [Multiplas consultas](#multiplas-consultas)
+  - [Múltiplas consultas](#multiplas-consultas)
   - [Sensibilidade](#sensibilidade)
   - [Regras de sintaxe](#regras-de-sintaxe)
 
@@ -143,7 +143,7 @@ James|
 
 Uma afirmação `SELECT` retorna zero ou mais linhas de uma ou mais tabelas do banco de dados.
 # [Regras de sintaxe SQL](#índice)
-### [Multiplas consultas](#índice)
+### [Múltiplas consultas](#índice)
 SQL permite executar múltiplas consultas ou comandos ao mesmo tempo. 
 
 A seguinte afirmação SQL seleciona as colunas Nome e Cidade da tabela clientes: 
@@ -177,7 +177,7 @@ As seguintes afirmações são equivalentes e irão mostrar o mesmo resultado:
 
 ```sql
 select Cidade from clientes;
-SELECT Cidade FROM cleintes;
+SELECT Cidade FROM clientes;
 sElEct Cidade From clientes; 
 ```
 É comum praticar a escrita de todos os comandos SQL em letras maiúsculas.
@@ -192,6 +192,6 @@ FROM clientes;
 ```
 Entretanto, é recomendado evitar linhas e espaços em branco desnecessários.
 
-Espaçamento apropriado e indentação separa os comandos fazendo com que suas afirmações SQL fiquem fáceis de ler e editar.
+Espaçamento apropriado e endentação separa os comandos fazendo com que suas afirmações SQL fiquem fáceis de ler e editar.
 
 Este curso é de propriedade do aplicativo SoloLearn e foi traduzido por [Ana Beatriz Augusto](https://www.linkedin.com/in/anabeatrizz/) usando os recursos [Reverso Context](https://context.reverso.net/translation/) e [Google Tradutor](https://translate.google.com.br/?hl=pt-BR).

@@ -62,7 +62,7 @@ Operador|Descrição
 `<=`|Menor ou igual a
 `BETWEEN`|Entre um número e outro
 
-Por exemplo, podemos mostrar todos os nomes listados em nossa tabela com excessão daquele que tem o ID 5.
+Por exemplo, podemos mostrar todos os nomes listados em nossa tabela com exceção daquele que tem o ID 5.
 ```sql
 SELECT * FROM clientes
 WHERE ID != 5;

@@ -99,9 +99,9 @@ Isso significa que se não há combinações usando o `ON` na tabela da direita,
 
 A sintaxe básica do `LEFT JOIN` é a seguinte:
 ```sql
-SELECT tabelal.colunal, tabela2.coluna2...
-FROM tabelal LEFT OUTER JOIN tabela2
-ON tabelal.nome_da_coluna = tabela2.nome_da_coluna;
+SELECT tabela1.coluna1, tabela2.coluna2...
+FROM tabela1 LEFT OUTER JOIN tabela2
+ON tabela1.nome_da_coluna = tabela2.nome_da_coluna;
 ```
 `OUTER` é opcional e pode ser pagado. 
 
@@ -164,9 +164,9 @@ Retorna todas as linhas da tabela da direita até mesmo se não há combinaçõe
 
 A sintaxe básica do `RIGHT JOIN` é a seguinte:
 ```sql
-SELECT tabelal.colunal, tabela2.coluna2...
-FROM tabelal RIGHT OUTER JOIN tabela2
-ON tabelal.nome_da_coluna = tabela2.nome_da_coluna;
+SELECT tabela1.colunal, tabela2.coluna2...
+FROM tabela1 RIGHT OUTER JOIN tabela2
+ON tabela1.nome_da_coluna = tabela2.nome_da_coluna;
 ```
 De novo, o `OUTER` é opcional e pode ser apagado.
 
@@ -205,7 +205,7 @@ Para isso, use os operadores `UNION` e `UNION ALL`.
 
 Todas as afirmações `SELECT` dentro do `UNION` devem ter o mesmo número de colunas. As colunas devem ter os mesmos tipos de dados. As colunas em cada afirmação `SELECT` devem estar na mesma ordem.<br>A sintaxe do `UNION` é a seguinte:
 ```sql
-SELECT nome(s)_da(s)_coluna(s) FROM tabelal
+SELECT nome(s)_da(s)_coluna(s) FROM tabela1
 UNION
 SELECT nome(s)_da(s)_coluna(s) FROM tabela2;
 ```
