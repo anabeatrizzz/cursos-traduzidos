@@ -1,0 +1,217 @@
+
+## Índice
+1. [Parágrafos](#parágrafos)
+
+	1.1 [O elemento `p`](#o-elemento-p)
+	
+	1.2 [Quebra de linha única](#quebra-de-linha-única)
+2. [Formatando texto](#formatando-texto)
+	
+	2.1 [Formatando elementos](#formatando-elementos)
+3. [Cabeçalhos, linhas e comentários](#cabeçalhos-linhas-e-comentários)
+
+	3.1 [Cabeçalhos HTML](#cabeçalhos-html)
+	
+	3.2 [Linhas horizontais](#linhas-horizontais)
+	
+	3.3 [Comentários](#comentários)
+4. [Projeto blog: Sobre mim](#projeto-blog-sobre-mim)
+5. [Elementos](#elementos)
+6. [Atributos](#atributos)
+
+	6.1 [Os atributos do HTML](#os-atributos-do-html)
+	
+	6.2 [Medidas dos elementos](#medidas-dos-elementos)
+	
+	6.3 [O atributo `align`](#o-atributo-align)
+
+### [Parágrafos](#índice)
+#### [O elemento `p`](#índice)
+Para criar um parágrafo, simplesmente escreva entre as tags de abertura e fechamento de `<p>`.
+
+```html
+<body>
+  <p>Isso é um parágrafo.</p>
+  <p>Isso é outro parágrafo.</p>
+</body>
+```
+
+> :information_source: Os navegadores colocam uma linha vazia automaticamente antes e depois de um parágrafo.
+
+#### [Quebra de linha única](#índice)
+Use a tag `<br />` para adicionar uma linha de texto sem ter que começar um novo parágrafo:
+
+```html
+<body>
+  <p>Isso é um parágrafo.</p>
+  <p>Isso é outro parágrafo.</p>
+  <p>Isso é <br /> uma quebra de linha.</p>
+</body>
+```
+
+> :information_source: O elemento `<br />` é vazio. Não tem tag de fechamento.
+
+Quando aberto no navegador, o documento HTML mostra que uma quebra de linha foi adicionada no parágrafo.
+
+### [Formatando texto](#índice)
+#### [Elementos de formatação](#índice)
+No HTML, há uma lista de elementos que especificam o estilo do texto.
+
+Os elementos de formatação foram designados para mostrar tipos especiais de texto:
+
+```html
+<body>
+  <p>Esse é um texto normal</p>
+  <p><b>Texto em negrito</b></p>
+  <p><big>Texto grande</big></p>
+  <p><i>Texto em itálico</i></p>
+  <p><small>Texto pequeno</small></p>
+  <p><strong>Texto em negrito</strong></p>
+  <p><sub>Texto subscrito</sub></p>
+  <p><sup>Texto sobrescrito</sup></p>
+  <p><ins>Texto grifado</ins></p>
+  <p><del>Texto deletado</del></p>
+</body>
+```
+
+> :information_source: A tag `<strong>` define textos importantes.
+
+Cada parágrafo do exemplo está com uma formatação diferente para demonstrar o que cada tag faz.
+
+> :information_source: Os navegadores mostram `<strong>` como `<b>` e `<em>` como `<i>`.<br>
+Porém, os significados dessas tags diferem: `<b>` e `<i>` definem texto em negrito e itálico, respectivamente, enquanto que `<strong>` e `<em>` indicam que o texto é "importante". 
+
+### [Cabeçalhos, linhas e comentários](#índice)
+#### [Cabeçalhos HTML](#índice)
+O HTML inclui seis níveis de cabeçalho, que são ranqueados de acordo com a importância.<br>
+São: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` e `<h6>`.
+
+__O código a seguir define todos os cabeçalhos:__
+
+```html
+<body>
+  <h1>Cabeçalho 1</h1>
+  <h2>Cabeçalho 2</h2>
+  <h3>Cabeçalho 3</h3>
+  <h4>Cabeçalho 4</h4>
+  <h5>Cabeçalho 5</h5>
+  <h6>Cabeçalho 6</h6>
+</body>
+```
+
+> :information_source: Não é recomendado usar cabeçalhos só para deixar o texto maior ou em negrito, pois as ferramentas de busca usam cabeçalhos para indexar a estrutura e conteúdo do site.
+
+#### [Linhas horizontais](#índice)
+Para criar uma linha horizontal, use a tag `<hr />`.
+
+```html
+<body>
+  <p>Isso é um parágrafo</p>
+  <hr />
+  <p>Isso é um parágrafo</p>
+</body>
+```
+
+> :information_source: No HTML5 a tag `<hr>` representa uma quebra temática.
+
+#### [Comentários](#índice)
+Os navegadores não mostram comentários, mas são úteis na documentação do HTML e podem ser descrições, lembretes e outras observações.
+
+```html
+<!-- Comentário -->
+```
+
+__Exemplo:__
+
+```html
+<body>
+  <p>Isso é um parágrafo</p>
+  <!-- Isso é um comentário -->
+</body>
+```
+
+### [Projeto blog: Sobre mim](#índice)
+Vamos voltar pro projeto de blog.<br>
+A seção __Sobre mim__ conterá texto dentro da tag `<h1>` junto com dois parágrafos que formatam texto usando as tags que já vimos.
+
+__O código:__
+
+```html
+<h1><span>Sobre mim</span></h1>
+<p>Hey! Sou <strong>Ana</strong>. Codar mudou a minha vida...</p>
+<p>"Declare variáveis, não guerra"</p>
+```
+
+> :information_source: __TAREFA__:<br>1. Crie sua própria seção Sobre mim mudando o texto.<br>2. Brinque com o código; experimente mudar o texto.
+
+### [Elementos](#índice)
+Documentos HTML são feitos de elementos HTML. Um elemento HTML é escrito usando uma __tag de abertura__ e uma __tag de fechamento__ e com o __conteúdo__ no meio.
+
+Os documentos HTML consistem de elementos HTML aninhados. No exemplo abaixo, o elemento `body` inclui as tags `<p>`, `<br />` e o conteúdo "Isso é um parágrafo".
+
+```html
+<body>
+  <p>Isso é um parágrafo <br /></p>
+</body>
+```
+
+> :information_source: Alguns elementos HTML não possuem tag de fechamento.
+
+Alguns elementos são pequenos. Visto que não podemos colocar conteúdo dentro de uma tag de quebra de linha e ela não possui tag de fechamento, é um elemento único e separado.
+
+### [Atributos](#índice)
+#### [Os atributos do HTML](#índice)
+Providenciam __informação adicional__ sobre um elemento ou tag, enquanto o __modificam__ também.<br>
+A maioria dos atributos têm valor; o valor modifica o atributo.
+
+```html
+<p align="center">
+  Texto alinhado no centro
+</p>
+```
+
+Neste exemplo, o valor "center" indica que o conteúdo dentro do elemento `p` deve estar alinhado no centro
+
+> :information_source: Os atributos são sempre especificados na tag de abertura e aparecem em pares de nome="valor".
+
+#### [Medidas dos elementos](#índice)
+Como exemplo, podemos modificar a linha horizontal para que tenha 50 pixels.
+
+__Isso pode ser feito com o atributo width:__
+
+```html
+<hr width="50px" />
+```
+
+__A largura de um elemento também pode ser definida usando porcentagens:__
+
+```html
+<hr width="50%" />
+```
+
+#### [O atributo `align`](#índice)
+É usado para especificar o alinhamento do texto.
+
+No exemplo abaixo, temos um parágrafo alinhado no centro e uma linha alinhada na direita.
+
+```html
+<body>
+  <p align="center">
+    Isso é texto
+    <br />
+    <hr width="10%" align="right" />
+    Isso também é texto.
+  </p>
+</body>
+```
+
+> :information_source: O alinhamento de `<p>` não é suportado no HTML5.
+
+Você talvez esteja se perguntando o que acontece se tentar aplicar atributos contraditórios dentro do mesmo elemento.
+
+```html
+<p align="center">
+  Isso é um texto.
+  <hr width="50%" align="left" />
+</p>
+```

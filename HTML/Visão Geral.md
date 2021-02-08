@@ -1,0 +1,124 @@
+## Índice
+1. [O que é HTML?](#o-que-é-html)
+
+	1.1 [A estrutura web](#a-estrutura-web)
+	
+	1.2 [Design web moderno](#design-web-moderno)
+2. [Estrutura básica do documento HTML](#estrutura-básica-do-documento-html)
+
+	2.1 [A tag `html`](#a-tag-html)
+	
+	2.2 [A tag `head`](#a-tag-head)
+	
+	2.3 [A tag `body`](#a-tag-body)
+3. [Criando uma página HTML](#criando-uma-página-html)
+
+	3.1 [O arquivo HTML](#o-arquivo-html)
+	
+	3.2 [A tag `title`](#a-tag-title)
+4. [Criando um blog](#criando-um-blog)
+
+### [O que é HTML](#índice)
+HTML significa HyperText Markup Language (Linguagem de Marcação de Hypetexto)
+
+Ao contrário de linguagens de programação que usam scripts para executar funções, uma linguagem de marcação usa tags para identificar conteúdo.
+
+__Exemplo de tag HTML:__
+
+```html
+<p>Sou um parágrafo</p>
+```
+#### [A estrutura web](#índice)
+A habilidade de usar HTML é essencial para qualquer desenvolvedor web. Adquirir essa habilidade é o ponto de entrada de qualquer um que está aprendendo como criar conteúdo para web.
+
+#### [Design web moderno](#índice)
+__HTML__: Estrutura
+
+__CSS__: Apresentação
+
+__JavaScript__: Comportamento
+
+__PHP ou similar__: Backend
+
+__CMS__: Gerenciamento de conteúdo
+
+### [Estrutura básica do documento HTML](#índice)
+#### [A tag `html`](#índice)
+Embora várias versões têm sido divulgadas ao longo dos anos, o básico do HTML permanece o mesmo.
+
+A estrutura de um documento HTML tem sido comparado com a de um sanduíche. Como um sanduíche tem duas fatias de pão, o documento HTML possui tags de abertura e fechamento.
+
+Essas tags, como o pão no sanduíche, ficam em volta do resto:
+
+```html
+<html>
+  ...
+</html>
+```
+
+> :information_source: Tudo em um documento HTML está por volta da tag `html`.
+
+#### [A tag `head`](#índice)
+O que aparece primeiro dentro da tag `html` é a tag `head`.
+
+Esta tag guarda todos os elementos não visuais que fazem a página funcionar.
+
+```html
+<html>
+  <head></head>
+</html>
+```
+
+#### [A tag `body`](#índice)
+A tag `body` vem depois da tag `head`.<br>
+Todos os elementos visuais estão contidos dentro dela.
+
+Cabeçalhos, parágrafos, listas, citações, imagens e links são apenas alguns elementos que podem estar contidos dentro da tag `body`.
+
+__Estrutura básica do HTML:__
+
+```html
+<html>
+  <head></head>
+  <body></body>
+</html>
+```
+
+> :information_source: A tag `body` define o conteúdo principal do documento HTML.
+
+### [Criando uma página HTML](#índice)
+#### [O arquivo HTML](#índice)
+Os arquivos HTML são arquivos de texto, então você pode usar qualquer __editor de texto__ para criar seu site.<br>
+Há editores HTML muito legais disponíveis, você pode escolher o que preferir. Por enquanto vamos escrever nossos exemplos no __Notepad__.
+
+> :information_source: Você pode executar, salvar e compartilhar seu HTML no [code playground do SoloLearn](https://www.sololearn.com/Codes/), sem ter que instalar nada a mais.
+
+Adicione a estrutura HTML básica no editor de texto com "Isso é uma linha de texto" no body.
+
+```html
+<html>
+  <head></head>
+  <body>Isso é uma linha de texto.</body>
+</html>
+```
+
+> :information_source: Não esqueça de salvar o arquivo. Os arquivos HTML devem terminar com __.html__ ou __.htm__
+
+#### [A tag `title`](#índice)
+Para colocar um título na guia descrevendo o site, adicione o elemento `title` na tag `head`:
+
+```html
+<html>
+  <head>
+    <title>Primeira página</title>
+  </head>
+  <body>Isso é uma linha de texto.</body>
+</html>
+```
+
+> :information_source: O título é importante, pois descreve a página e é usado por ferramentas de pesquisa.
+
+### [Criando um blog](#índice)
+Ao longo do curso, vamos te ajudar a praticar e criar seu próprio projeto de blog, então você irá fixar o que aprendeu e colocar em uso.<br>
+Continue e siga as instruções na seção __TAREFA__.
+> :information_source: __TAREFA__:<br>1. Abra o código.<br>2. No cabeçalho do topo, mude o nome para seu próprio nome.<br>3. Mude o título da página. Lembre-se, o título da página está localizado na tag `title` em `head`.

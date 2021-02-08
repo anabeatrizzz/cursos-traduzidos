@@ -1,0 +1,235 @@
+## Índice
+1. [Imagens](#imagens)
+
+	1.1 [A tag `img`](#a-tag-img)
+	
+	1.2 [Localização da imagem](#localização-da-imagem)
+	
+	1.3 [Tamanho da imagem](#tamanho-da-imagem)
+	
+	1.4 [Borda da imagem](#borda-da-imagem)
+2. [Links](#links)
+
+	2.1 [A tag `a`](#a-tag-a)
+	
+	2.2 [Criando o primeiro link](#criando-o-primeiro-link)
+	
+	2.3 [O atributo `target`](#o-atributo-target)
+3. [Listas](#listas)
+
+	3.1 [Listas ordenadas](#listas-ordenadas)
+	
+	3.2 [Listas não ordenadas](#listas-não-ordenadas)
+4. [Projeto blog: Minhas habilidades](#projeto-blog-minhas-habilidades)
+5. [Tabelas](#tabelas)
+
+	5.1 [Criando uma tabela](#criando-uma-tabela)
+	
+	5.2 [Os atributos `border` e `colspan`](#os-atributos-border-e-colspan)
+	
+	5.3 [Os atributos `align` e `bgcolor`](#os-atributos-align-e-bgcolor)
+6. [Projeto blog: Meu horário](#projeto-blog-meu-horário)
+
+### [Imagens](#índice)
+#### [A tag `img`](#índice)
+A tag `<img>` é usada para inserir uma imagem. Contém apenas atributos e não tem uma tag de fechamento.
+
+A URL da imagem pode ser definida usando o atributo `src`.
+
+__A sintaxe é assim:__
+
+```html
+<img src="imagem.png" />
+```
+
+> :information_source: O atributo `alt` especifica um texto alternativo para uma imagem.
+
+#### [Localização da imagem](#índice)
+Você precisa colocar a __localização da imagem__ no atributo `src` entre as aspas.
+
+Por exemplo, se você tem uma foto nomeada "arvore.png" na mesma pasta que o arquivo HTML, seu código ficará assim:
+
+```html
+<body>
+  <img src="arvore.png" />
+</body>
+```
+
+> :information_source: Caso a imagem não possa ser mostrada, o atributo `alt` especifica um texto alternativo que descreve a imagem em palavras. O atributo `alt` é obrigatório aqui.
+
+#### [Tamanho da imagem](#índice)
+Para definir o tamanho da imagem, use os atributos `width` e `height`.
+
+O valor pode ser especificado em __pixels__ ou __percentagem__:
+
+```html
+<body>
+  <img
+    src="http://www.sololearn.com/images/tree.jpg"
+    height="150px"
+    width="150px"
+    alt=""
+  />
+  <br />
+  <img
+    src="http://www.sololearn.com/images/tree.jpg"
+    height="50%"
+    width="50%"
+    alt=""
+  />
+</body>
+```
+
+> :information_source: Leva tempo para imagens carregarem. Usar imagens grandes pode deixar sua página lenta, então as use com cuidado.
+
+#### [Borda da imagem](#índice)
+Por padrão, uma imagem não tem bordas. Use o atributo `border` dentro da tag `img` para criar uma borda ao redor da imagem.
+
+```html
+<img
+  src="http://www.sololearn.com/images/tree.jpg"
+  height="150px"
+  width="150px"
+  border="1px"
+  alt=""
+/> 
+```
+
+> :information_source: Por padrão, o Internet Explorer 9 e suas versões antigas mostram uma borda ao redor de uma imagem a menos que um atributo `border` esteja definido.
+
+### [Links](#índice)
+#### [A tag `a`](#índice)
+Links também são uma parte essencial de todo site. Você pode adicionar links em textos ou imagens que permitirão o clique neles para redirecionar a outro arquivo ou site.<br>
+No HTML, os links são definidos usando a tag `<a>`.
+
+Use o atributo `href` para definir o endereço de destino do link:
+
+```html
+<a href=""></a>
+```
+
+Para deixar uma imagem com aspecto de link, coloque a tag `<img>` dentro da tag `<a>`.
+
+#### [Criando o primeiro link](#índice)
+No exemplo abaixo, um link para o site do SoloLearn foi definido:
+
+```html
+<a href="https://www.sololearn.com">Aprenda brincando</a>
+```
+
+Quando o arquivo é salvo, o texto "Aprenda brincando" será mostrado como link e clicar nele redireciona para __www.sololearn.com__.
+
+> :information_source: Links podem ser absolutos ou relativos.
+
+#### [O atributo `target`](#índice)
+Este atributo especifica onde abrir o documento do link.
+
+O valor `_blank` fará com que o link seja aberto em uma nova janela ou guia:
+
+```html
+<a
+  href="https://www.sololearn.com"
+  target="_blank"
+>
+  Aprenda brincando
+</a>
+```
+
+> :information_source: Links visitados ficam grifados e roxos.
+
+### [Listas](#índice)
+#### [Listas ordenadas](#índice)
+Uma lista ordenada começa com a tag `<ol>` e cada item da lista é definido pela tag `<li>`.
+
+Exemplo de uma lista ordenada:
+
+```html
+<body>
+  <ol>
+    <li>Vermelho</li>
+    <li>Azul</li>
+    <li>Verde</li>
+  </ol>
+</body>
+```
+
+> :information_source: Os itens da lista serão marcados com números automaticamente.
+
+#### [Listas não ordenadas](#índice)
+Uma lista não ordenada começa com a tag `<ul>`.
+
+```html
+<body>
+  <ul>
+    <li>Vermelho</li>
+    <li>Azul</li>
+    <li>Verde</li>
+  </ul>
+</body>
+```
+
+> :information_source: Os itens da lista serão marcados com bolinhas.
+
+### [Projeto blog: Minhas habilidades](#índice)
+De volta ao blog, vamos criar a seção __Minhas habilidades__, que é uma lista não ordenada de linguagens de programação que você conhece.<br>
+__Lembrete__: Use a tag `<ul>`, na qual cada item é representado pela tag `<li>`, para criar uma lista não ordenada.
+
+Vamos aprender a fazer uma barra de progresso mais adiante.
+
+> :information_source: __TAREFA__:<br>1. Crie sua própria seção Minhas habilidades.<br>2. Use a tag `<a>` para que cada item da lista seja um link.
+
+### [Tabelas](#índice)
+#### [Criando uma tabela](#índice)
+Tabelas são definidas pela tag `<table>`.<br>
+Tabelas são divididas em linhas com a tag `<tr>`.<br>
+As linhas da tabela são divididas em colunas (dados da tabela) com a tag `<td>`.
+
+Exemplo de uma tabela com __uma linha__ e __três colunas__:
+
+```html
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+```
+
+> :information_source: As tags de dado da tabela `<td>` agem como contêiners de dados dentro da tabela.<br>Podem conter qualquer tipo de elemento HTML, como texto, imagens, listas, outras tabelas e etc.
+
+#### [Os atributos `border` e `colspan`](#índice)
+Uma borda pode ser adicionada usando o atributo `border`:
+
+```html
+<table border="2">
+```
+
+Uma __célula__ de uma tabela pode abranger duas ou mais colunas:
+
+```html
+<td colspan="2">Laranja</td>
+```
+
+> :information_source: O atributo `border` não é suportado no HTML5. Para que uma célula abranja mais que uma linha, use o atributo `rowspan`.
+
+#### [Os atributos `align` e `bgcolor`](#índice)
+Para mudar a posição da tabela, use o atributo `align` dentro da tag `table`:
+
+```html
+<table align="center">
+```
+
+Agora vamos especificar uma cor vermelha para o fundo de uma célula da tabela. Para isso, use o atributo `bgcolor`.
+
+```html
+<td bgcolor="red">Vermelho</td>
+```
+
+> :information_source: Para estilizar elementos, o CSS é mais efetivo do que o HTML. [Veja o curso de CSS do SoloLearn](https://www.sololearn.com/learning/1023) para aprender mais sobre estilos.
+
+### [Projeto blog: Meu horário](#índice)
+Use a tag `<table>` para adicionar uma tabela em seu blog que representa sua agenda de aprendizado.<br>
+A tag `<th>` representa o cabeçalho da tabela.
+
+> :information_source: __TAREFA__: Mude a tabela e crie sua própria agenda!
